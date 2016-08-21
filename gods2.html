@@ -56,7 +56,7 @@
 
 	.container{
 		display:block;
-		width: 750px;
+		width: 950px;
 		height : 1000px;
 		margin: 0 auto;
 	}
@@ -108,6 +108,98 @@
  		float: left;
  		padding: 5px;
  	}
+
+
+ 	.dropbtn {
+    background-color: black;
+    color: #D2BF53;
+    padding: 3px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: #D2BF53;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: black}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: black;
+}
+
+.dropbtn2 {
+    background-color: black;
+    color: #D2BF53;
+    padding: 3px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown2 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content2 a {
+    color: #D2BF53;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content2 a:hover {background-color: black}
+
+.dropdown2:hover .dropdown-content2 {
+    display: block;
+}
+
+.dropdown2:hover .dropbtn2 {
+    background-color: black;
+}
+
+button{
+	background-color: black;
+    color: #D2BF53;
+    padding: 3px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: Arial;
+}
+
+
+
 
 
 
@@ -167,7 +259,7 @@
 	.stuff{
 		float: left;
 		margin-left: 15%;
-		margin-top: 40px;
+		margin-top: 10px;
 
 	}
 
@@ -184,6 +276,20 @@
 		margin-left: 270px;
 	}
 
+	h1{
+		font-size: 50px;
+		border-top: 1px solid #B8860B ;
+		margin-top: 20px;
+	}
+
+	h6{
+		font-family:  Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		font-size: 15px;
+		font-weight: lighter;
+	}
+
 </style>
 </head>
 <body>
@@ -196,30 +302,50 @@
 <div class="nav2">
 <nav>
 <ul>
-	<li>Books</li>
-
-
-
+	<li>
+	<div class="dropdown">
+  	<button class="dropbtn">Books</button>
+  		<div class="dropdown-content">
+    	<a href="#">Percy Jackson and the Olympians</a>
+    	<a href="#">The Heroes of Olympus</a>
+    	<a href="#">Kane Chronicles</a>
+    	<a href="#">Magnus Chase and the Gods of Asgrad</a>
+    	<a href="#">The 39 Clues</a>
+    	<a href="#">The Trials of Apollo</a>
+    	<a href="#">Tres Navarre</a>
+  		</div>
+	</div>
+	</li>
 
 
 	<li><img src="images/star-xl.png" width="10" height="10"></li>
 	
-	<li>About</li>
+	<li>
+	<div class="dropdown2">
+  	<button class="dropbtn2">About</button>
+  		<div class="dropdown-content2">
+    	<a href="#">Contact</a>
+    	<a href="#">An Interview With Rick</a>
+    	<a href="#">FAQs</a>
+    	<a href="#">Press Kit Materials</a>
+    	<a href="#">Advice For Writers</a>
+  		</div>
+	</div></li>
 	
 
-
-
-
-
 	<li><img src="images/star-xl.png" width="10" height="10"></li>
-	<li>News</li>
+	<li><button>News</button></li>
 	<li><img src="images/star-xl.png" width="10" height="10"></li>
-	<li>Teachers & Parents</li>
+	<li><button>Teachers & Parents</button></li>
 </ul>
 </nav>
 </div>
 
 <div class="stuff">
+<h1>Meet the Greek Gods</h1>
+
+<h6>Please select a name from the list below to view the Greek god&prime;s description.</h6>
+
 <div class="container">
 	<div class="item"><img style="margin-right: 3px" src="images/plus-2-xxl.png" width="10" height="10"> Zeus</div>
 	<div class="item-data">
@@ -312,11 +438,12 @@
 		<div>
 			<h2>God of archery, music, poetry, prophecy, medicine, and later on the god of the sun (Ah-paul'-oh)</h2>
 	<img class="apollo" style="margin-right: 20px" src="images/apollo.jpg">
-    <p class="descrip2"> Distinguishing Features: The goddess prefers simple dresses of green and gold, though you can often find her in gardening clothes.</p>
-    <p class="now2"> Now: Demeter divides her time between the upper world, where she oversees the growing season and produces commercials encouraging people to eat more cereal products (part of a balanced breakfast!), and the Underworld, where she visits her daughter Persephone and plays the wicked mother-in-law to Hades, who kidnapped her poor daughter eons ago. He's still not good enough for Persephone. She should've married the god of doctors!</p>
-   <p class="then2"> Then: Demeter was one of the quieter goddesses. As long as the crops were growing and the farmers were happy, Demeter was content. But don't underestimate her importance. If you wanted to eat, you had to make sure you kepton Demeter's good side, When Hades stole her daughter, Demeter stopped all plants from growing, and people started starving. Hard to make a cheeseburger with no grain for bread and no grass for the cows.</p>
-   <p class="symbol"><b>Symbol</b>: Torch, cornplant (though popcorn works, too)</p>
-   <p class="name"><b>Roman name</b>: Ceres</p>
+    <p class="descrip2"> Distinguishing Features: He loves wearing shades. Apollo likes to look hot, and I don't mean temperature. He typically looks like a movie star with the fashionably shabby clothes, the laid back attitude, the brilliant smile, and the Ray Ban sunglasses. His sun chariot morphs into a Maserati.</p>
+    <p class="now2"> Now: Do NOT ask him to recite his poetry. Seriously. YOu can find Apollo cruising down Sunset Avenue looking cool, or hanging out at parties chatting with writers or rock stars. He likes to be the center of attention wherever he goes. He's a nice enough guy, as long as you agree that hee's the coolest person on earth. Just don't get him angry, or he can get a little hot under the collar.</p>
+   
+   <p class="then2"> Then: Apollo was into everything, from music to medicine, probably because he thought he was better at everything than everyone else. When the old sun god Helios retired, Apollo took over that job too, though he was mostly thought of as the god of poetry and music. Apollo didn't take criticism well. One time he asked King Midas to judge a contest between him and Pan, and when Midas decided Pan's music was better, Apollo gave the king donkey ears. The lesson: if someone asks your opinion, think carefully before you answer.</p>
+   <p class="symbol"><b>Symbol</b>: A lyre, laurel wreath</p>
+   <p class="name"><b>Roman name</b>: Apollo (you can't improve on perfection, baby!)</p>
 		</div>
 	</div>
 
